@@ -3,7 +3,7 @@ const FileSaver = require('file-saver');
 var player1;
 var player2;
 var epic;
-var moveCounter;
+var moveCounter = 1;
 
 function goteSente() {
     var gosen = Math.random();
@@ -41,20 +41,26 @@ function beeegBrain() {
 }
 
 function notation() {
-    var moveinput = generateNotation();
     if (player1 != null && player2 != null) {
-        epic = epic + "\n" + moveinput;
-        document.getElementById("inputnot").innerHTML = " ";
+        generateNotation();
+        document.getElementById("coords").innerHTML = " ";
         document.getElementById("output").innerHTML = epic;
-    } else {
-        document.getElementById("notbtn").disabled;
     }
 }
 
 function generateNotation() {
     var move;
+    var pieces = document.getElementById("pieceselect");
+    var actions = document.getElementById("actionselect");
+    alert(pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value + document.getElementById("coords").value);
 
-    
 
-    return move
+    if (document.getElementById("posprom").checked == true && document.getElementById("doneprom").checked == true) {
+        move = pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value + document.getElementById("coords").value + "+";
+    } else if (document.getElementById("posprom").checked == true && document.getElementById("doneprom").checked == false) {
+        move = pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value +  document.getElementById("coords").value + "=";
+    } else {
+        move = pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value +  document.getElementById("coords").value;
+    }
+    epic = epic + "\n" + move;
 }
