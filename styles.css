@@ -18,7 +18,7 @@
 .title {
     padding-bottom: 2rem;
     font-size: 40px;
-    text-decoration: underlineq;
+    text-decoration: underline;
 }
 
 .textcenter {
@@ -38,6 +38,10 @@ input {
 
 .input {
     height: 30px;
+}
+
+.input2 {
+    margin-top: 10px ;
 }
 
 textarea {
@@ -69,4 +73,10 @@ textarea {
 
 .button:disabled {
     background-color: #8EA1FF;
+}
+
+.selector {
+    border:#8EA1DF;
+    border-radius: 5px;
+    height: 32px;
 }

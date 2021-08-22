@@ -38,7 +38,7 @@
 
         <div>
             <div style="display:grid;">
-                <select name="piece" id="pieceselect">
+                <select name="piece" id="pieceselect" class="input selector">
                     <option value="P">Pawn/歩</option>
                     <option value="L">Lance/香</option>
                     <option value="N">Knight/桂</option>
@@ -54,13 +54,22 @@
                     <option value="+B">+Bishop/馬</option>
                     <option value="+R">+Rook/龍</option>
                 </select>
-                <select name="action" id="actionselect">
+
+                <select name="action" id="actionselect" class="input2 selector">
                     <option value="-">Move</option>
                     <option value="x">Capture</option>
                     <option value="*">Drop</option>
                 </select>
-                <abbr title="Can promote?"><input type="checkbox"></input></abbr>
-                <abbr title="Promotion?"><input type="checkbox"></input></abbr>
+
+                <abbr title="Coordinates"><input type="text" class="selector input2"></input></abbr>
+                
+                <div>
+                    <p class="font">Can promote?</p>
+                    <abbr title="Can promote?"><input id="posprom" type="checkbox" class="input2"></input></abbr>
+                    <p class="font">Promotion?</p>
+                    <abbr title="Promotion?"><input id="doneprom" type="checkbox" class="input2"></input></abbr>
+                </div>
+    
             </div>
             <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
         </div>

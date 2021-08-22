@@ -4,7 +4,6 @@ var player1;
 var player2;
 var epic;
 var moveCounter;
-var gameProgress = false;
 
 function goteSente() {
     var gosen = Math.random();
@@ -12,13 +11,15 @@ function goteSente() {
     if (gosen > 0.5) {
         player1 = player1 + " (Sente)";
         player2 = player2 + " (Gote)";
-        document.getElementById("notitle").innerHTML = player1;
+        document.getElementById("notitle").innerHTML = player1
         document.getElementById("yestitle").innerHTML = player2
+        document.getElementById("p2btn").disabled;
     } else if (gosen <= 0.5) {
         player2 = player2 + " (Sente)";
         player1 = player1 + " (Gote)";
-        document.getElementById("notitle").innerHTML = player1;
+        document.getElementById("notitle").innerHTML = player1
         document.getElementById("yestitle").innerHTML = player2
+        document.getElementById("p2btn").disabled;
     }
 }
 
@@ -35,12 +36,12 @@ function beeegBrain() {
         document.getElementById("output").innerHTML = epic;
         document.getElementById("p2btn").disabled;
     } else {
-        document.getElementById.disabled;
+        alert("sadge")
     }
 }
 
 function notation() {
-    var moveinput = document.getElementById("inputnot").value;
+    var moveinput = generateNotation();
     if (player1 != null && player2 != null) {
         epic = epic + "\n" + moveinput;
         document.getElementById("inputnot").innerHTML = " ";
@@ -51,5 +52,9 @@ function notation() {
 }
 
 function generateNotation() {
+    var move;
+
     
+
+    return move
 }
