@@ -52,8 +52,6 @@ function generateNotation() {
     var move;
     var pieces = document.getElementById("pieceselect");
     var actions = document.getElementById("actionselect");
-    alert(pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value + document.getElementById("coords").value);
-
 
     if (document.getElementById("posprom").checked == true && document.getElementById("doneprom").checked == true) {
         move = pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value + document.getElementById("coords").value + "+";
