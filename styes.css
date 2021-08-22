@@ -1,0 +1,30 @@
+:root {
+    --blue: #8EA1DF;
+}
+
+.foreblue {
+    color: #8EA1DF;
+}
+
+.backblue {
+    background-color: #8EA1DF;
+}
+
+.font {
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+
+.title {
+    padding-bottom: 2rem;
+    font-size: 40px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
