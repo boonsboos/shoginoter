@@ -18,9 +18,33 @@
     </header>
 
     <section>
-        <h2 id="notitle" class="font textcenter">ellu</h2>
-        <div style="margin: 0 auto;">
-            <button onclick="smallBrain()">hf</button>
+        <h2 id="notitle" class="font textcenter">Player 1</h2>
+        <h3 id="vs" class="font textcenter" style="font-size: 20px;">vs</h3>
+        <h2 id="yestitle" class="font textcenter">Player 2</h2>
+
+        <div>
+            <input id="input1" type="text"></input>
+            <button onclick="smallBrain()">Player 1</button>
+        </div>
+
+        <div>
+            <input id="input2" type="text"></input>
+            <button onclick="beeegBrain()">Player 2</button>
+        </div>
+
+        <div>
+            <h3 class="font textcenter">Move</h3>
+        </div>
+
+        <div>
+            <div>
+                <input id="inputnot"></input>
+                <button onclick="notation()">Submit</button>
+            </div>
+        </div>
+
+        <div>
+            <textarea id="output"></textarea>
         </div>
         
     </section>

@@ -3,11 +3,11 @@
 }
 
 .foreblue {
-    color: #8EA1DF;
+    color: var(--blue);
 }
 
 .backblue {
-    background-color: #8EA1DF;
+    background-color: var(--blue);
 }
 
 .font {
@@ -27,4 +27,17 @@
 div {
     display: flex;
     justify-content: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 50px;
+    width: 20%;
+}
+
+button {
+    height: 21px;
 }
