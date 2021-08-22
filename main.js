@@ -8,19 +8,19 @@ var gameProgress = false;
 
 function goteSente() {
     var gosen = Math.random();
-    if (gosen > 0.5 && gameProgress == false) {
-        alert("player1 sente");
+
+    if (gosen > 0.5) {
         player1 = player1 + " (Sente)";
         player2 = player2 + " (Gote)";
-        gameProgress = true;
-    } else if (gosen <= 0.5 && gameProgress == false) {
-        alert("player1 gote");
+        document.getElementById("notitle").innerHTML = player1;
+        document.getElementById("yestitle").innerHTML = player2
+    } else if (gosen <= 0.5) {
         player2 = player2 + " (Sente)";
         player1 = player1 + " (Gote)";
-        gameProgress = true;
+        document.getElementById("notitle").innerHTML = player1;
+        document.getElementById("yestitle").innerHTML = player2
     }
 }
-
 
 function smallBrain() {
     player1 = document.getElementById("input1").value;
@@ -31,9 +31,6 @@ function beeegBrain() {
     player2 = document.getElementById("input2").value;
     if (player2!=null) {
         goteSente();
-        alert("past gotesente")
-        document.getElementById("notitle").innerHTML = player1;
-        document.getElementById("yestitle").innerHTML = player2
         epic = player1+" vs "+player2;
         document.getElementById("output").innerHTML = epic;
         document.getElementById("p2btn").disabled;
@@ -51,4 +48,8 @@ function notation() {
     } else {
         document.getElementById("notbtn").disabled;
     }
+}
+
+function generateNotation() {
+    
 }

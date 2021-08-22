@@ -49,9 +49,10 @@ textarea {
 }
 
 .button {
-    height: 30px;
+    margin-left: 10px;
+    height: 32px;
     border-color:white;
-    border-radius: 1px;
+    border-radius: 5px;
     background-color:white;
     border: 1px;
 }

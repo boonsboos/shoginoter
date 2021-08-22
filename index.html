@@ -36,20 +36,33 @@
             <h3 class="font textcenter">Move</h3>
         </div>
 
-        <div style="display:grid;">
+        <div>
             <div style="display:grid;">
                 <select name="piece" id="pieceselect">
-                    <option value="P">Pawn</option>
-                    <option value="L">Lance</option>
-                    <option value="N">Knight</option>
-                    <option value="S">Silver General</option>
-                    <option value="G">Gold General</option>
-                    <option value="B">Bishop</option>
-                    <option value="R">Rook</option>
-                    <option value="K">King</option>
+                    <option value="P">Pawn/歩</option>
+                    <option value="L">Lance/香</option>
+                    <option value="N">Knight/桂</option>
+                    <option value="S">Silver General/銀</option>
+                    <option value="G">Gold General/金</option>
+                    <option value="B">Bishop/角</option>
+                    <option value="R">Rook/飛</option>
+                    <option value="K">King/王</option>
+                    <option value="+P">+Pawn/と</option>
+                    <option value="+L">+Lance/成香</option>
+                    <option value="+N">+Knight/成桂</option>
+                    <option value="+S">+Silver General/成銀</option>
+                    <option value="+B">+Bishop/馬</option>
+                    <option value="+R">+Rook/龍</option>
                 </select>
-                <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
+                <select name="action" id="actionselect">
+                    <option value="-">Move</option>
+                    <option value="x">Capture</option>
+                    <option value="*">Drop</option>
+                </select>
+                <abbr title="Can promote?"><input type="checkbox"></input></abbr>
+                <abbr title="Promotion?"><input type="checkbox"></input></abbr>
             </div>
+            <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
         </div>
 
         <div>
