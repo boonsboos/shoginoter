@@ -37,7 +37,7 @@
         </div>
 
         <div>
-            <div style="display:grid;">
+            <div style="display: grid;">
                 <select name="piece" id="pieceselect" class="input selector">
                     <option value="P">Pawn/歩</option>
                     <option value="L">Lance/香</option>
@@ -61,17 +61,18 @@
                     <option value="*">Drop</option>
                 </select>
 
-                <abbr title="Coordinates"><input type="text" class="selector input2"></input></abbr>
-                
+                <abbr title="Coordinates"><input id="coords" type="text" class="selector input2" style="width:364px;"></input></abbr>
+
                 <div>
-                    <p class="font">Can promote?</p>
-                    <abbr title="Can promote?"><input id="posprom" type="checkbox" class="input2"></input></abbr>
-                    <p class="font">Promotion?</p>
-                    <abbr title="Promotion?"><input id="doneprom" type="checkbox" class="input2"></input></abbr>
+                    <p class="font bold">Can promote?</p>
+                    <abbr title="Can promote?"><input id="posprom" type="checkbox" class="input2 checkbox"></input></abbr>
+                    <p class="font bold">Promotion?</p>
+                    <abbr title="Promotion?"><input id="doneprom" type="checkbox" class="input2 checkbox"></input></abbr>
+                    <p class="font bold">Checkmate?</p>
+                    <abbr title="Checkmate?"><input id="checkmate" type="checkbox" class="input2 checkbox"></input></abbr>
                 </div>
-    
+                <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
             </div>
-            <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
         </div>
 
         <div>

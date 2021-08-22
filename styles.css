@@ -15,6 +15,10 @@
     color:white;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .title {
     padding-bottom: 2rem;
     font-size: 40px;
@@ -32,7 +36,7 @@ div {
 
 input {
     margin-bottom: 10px;
-    border: #8EA1DF;
+    border-color: var(--blue);
     border-radius: 5px;
 }
 
@@ -48,7 +52,7 @@ textarea {
     margin-top: 50px;
     width: 266px;
     height:266px;
-    border: #8EA1DF;
+    border: var(--blue);
     border-radius: 10px;
 }
 
@@ -76,7 +80,12 @@ textarea {
 }
 
 .selector {
-    border:#8EA1DF;
+    border:var(--blue);
     border-radius: 5px;
     height: 32px;
+    background-color: white;
+}
+
+.checkbox {
+    margin-top:18px;
 }
