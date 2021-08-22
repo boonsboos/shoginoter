@@ -36,6 +36,10 @@ input {
     border-radius: 5px;
 }
 
+.input {
+    height: 30px;
+}
+
 textarea {
     margin-top: 50px;
     width: 266px;
@@ -44,23 +48,24 @@ textarea {
     border-radius: 10px;
 }
 
-button {
-    height: 21px;
+.button {
+    height: 30px;
     border-color:white;
-    border-radius: 5px;
+    border-radius: 1px;
     background-color:white;
+    border: 1px;
 }
 
-button:hover {
+.button:hover {
     background-color: gray;
     color:white;
 }
 
-button:active {
+.button:active {
     color: white;
     background-color: black;
 }
 
-button:disabled {
+.button:disabled {
     background-color: #8EA1FF;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="styes.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -23,23 +23,32 @@
         <h2 id="yestitle" class="font textcenter">Player 2</h2>
 
         <div>
-            <input id="input1" type="text"></input>
-            <button onclick="smallBrain()" id="p1btn">Player 1</button>
+            <input id="input1" type="text" class="input"></input>
+            <button onclick="smallBrain()" id="p1btn" class="button">Player 1</button>
         </div>
 
         <div>
-            <input id="input2" type="text"></input>
-            <button onclick="beeegBrain()" id="p2btn">Player 2</button>
+            <input id="input2" type="text" class="input"></input>
+            <button onclick="beeegBrain()" id="p2btn" class="button">Player 2</button>
         </div>
 
         <div>
             <h3 class="font textcenter">Move</h3>
         </div>
 
-        <div>
-            <div>
-                <input id="inputnot"></input>
-                <button onclick="notation()" id="notbtn">Submit</button>
+        <div style="display:grid;">
+            <div style="display:grid;">
+                <select name="piece" id="pieceselect">
+                    <option value="P">Pawn</option>
+                    <option value="L">Lance</option>
+                    <option value="N">Knight</option>
+                    <option value="S">Silver General</option>
+                    <option value="G">Gold General</option>
+                    <option value="B">Bishop</option>
+                    <option value="R">Rook</option>
+                    <option value="K">King</option>
+                </select>
+                <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
             </div>
         </div>
 

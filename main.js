@@ -5,6 +5,7 @@ var player2;
 var epic;
 var moveCounter;
 var gameProgress = false;
+
 function goteSente() {
     var gosen = Math.random();
     if (gosen > 0.5 && gameProgress == false) {
