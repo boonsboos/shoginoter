@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MrsHerobrine | shoginoter" />
+    <meta property="og:description" content="Browser app to record shogi games to a text file." />
+    <meta property="og:url" content="https://mrsherobrine.xyz/shoginoter" />
+    <meta property="og:image" content="full thumbnail path" />
+    
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="main.js"></script>
-    <title>shoginoter</title>
+    <title>MrsHerobrine | shoginoter</title>
 </head>
 <body class="backblue">
 
@@ -61,7 +67,7 @@
                     <option value="*">Drop</option>
                 </select>
 
-                <abbr title="Coordinates"><input id="coords" type="text" class="selector input2" style="width:380px;"></input></abbr>
+                <abbr title="Coordinates"><input id="coords" type="text" class="selector input2 button2" style="width:380px;"></input></abbr>
 
                 <div>
                     <p class="font bold">Can promote?</p>
@@ -71,7 +77,7 @@
                     <p class="font bold">Checkmate?</p>
                     <abbr title="Checkmate?"><input id="checkmate" type="checkbox" class="input2 checkbox"></input></abbr>
                 </div>
-                <button onclick="notation()" id="notbtn" class="button">Submit Move</button>
+                <button onclick="notation()" id="notbtn" class="button button2">Submit Move</button>
             </div>
         </div>
 

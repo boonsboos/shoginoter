@@ -85,9 +85,16 @@ textarea {
     border:var(--blue);
     border-radius: 5px;
     height: 32px;
+    width: 278px;
+    justify-self: center;
     background-color: white;
 }
 
 .checkbox {
     margin-top:18px;
+}
+
+.button2 {
+    width: 278px;
+    justify-self: center;
 }
