@@ -31,6 +31,8 @@ function beeegBrain() {
     if (player2!=null) {
         goteSente();
         epic = player1+" vs "+player2;
+        epic = epic + `\n${Date(Date.now())}`;
+        epic = epic + "\n-----------------------------------------"
         document.getElementById("output").innerHTML = epic;
         document.getElementById("p2btn").disabled;
     } else {
