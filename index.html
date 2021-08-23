@@ -44,30 +44,33 @@
 
         <div>
             <div style="display: grid;">
-                <select name="piece" id="pieceselect" class="input selector">
-                    <option value="P">Pawn/歩</option>
-                    <option value="L">Lance/香</option>
-                    <option value="N">Knight/桂</option>
-                    <option value="S">Silver General/銀</option>
-                    <option value="G">Gold General/金</option>
-                    <option value="B">Bishop/角</option>
-                    <option value="R">Rook/飛</option>
-                    <option value="K">King/王</option>
-                    <option value="+P">+Pawn/と</option>
-                    <option value="+L">+Lance/成香</option>
-                    <option value="+N">+Knight/成桂</option>
-                    <option value="+S">+Silver General/成銀</option>
-                    <option value="+B">+Bishop/馬</option>
-                    <option value="+R">+Rook/龍</option>
-                </select>
+                <div style="display:grid">
+                    <select name="piece" id="pieceselect" class="input selector button2">
+                        <option value="P">Pawn/歩</option>
+                        <option value="L">Lance/香</option>
+                        <option value="N">Knight/桂</option>
+                        <option value="S">Silver General/銀</option>
+                        <option value="G">Gold General/金</option>
+                        <option value="B">Bishop/角</option>
+                        <option value="R">Rook/飛</option>
+                        <option value="K">King/王</option>
+                        <option value="+P">+Pawn/と</option>
+                        <option value="+L">+Lance/成香</option>
+                        <option value="+N">+Knight/成桂</option>
+                        <option value="+S">+Silver General/成銀</option>
+                        <option value="+B">+Bishop/馬</option>
+                        <option value="+R">+Rook/龍</option>
+                    </select>
 
-                <select name="action" id="actionselect" class="input2 selector">
-                    <option value="-">Move</option>
-                    <option value="x">Capture</option>
-                    <option value="*">Drop</option>
-                </select>
+                    <select name="action" id="actionselect" class="input2 selector button2">
+                        <option value="-">Move</option>
+                        <option value="x">Capture</option>
+                        <option value="*">Drop</option>
+                    </select>
 
-                <abbr title="Coordinates"><input id="coords" type="text" class="selector input2 button2" style="width:380px;"></input></abbr>
+                    <abbr title="Coordinates"><input id="coords" type="text" class="selector input2 button2"></input></abbr>
+
+                </div>
 
                 <div>
                     <p class="font bold">Can promote?</p>
