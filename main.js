@@ -62,3 +62,10 @@ function generateNotation() {
     }
     epic = epic + "\n" + move;
 }
+
+function download() {
+    var date = Date();
+    player1 = player1.replace(/(Go|Sen)te\b/, "");
+    player2 = player2.replace(/(Go|Sen)te\b/, "");
+    FileSaver.saveAs(epic, player1+"_"+player2+"-"+date+".txt");
+}
