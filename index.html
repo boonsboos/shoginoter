@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="FileSaver.js"></script>
     <title>MrsHerobrine | shoginoter</title>
 </head>
 <body class="backblue">
@@ -83,12 +84,15 @@
         </div>
 
         <div style="display:grid">
-            <textarea id="output"></textarea>
-            <button onclick="download()" id="notbtn" class="button button2" style="margin-top: 10px">Download</button>
+            <textarea id="output" class="button2"></textarea>
+            <button onclick="downloading()" id="notbtn" class="button button2" style="margin-top: 10px">Copy to clipboard</button>
         </div>
         
     </section>
 
-    <footer></footer>
+    <footer>
+        <p class="font textcenter" style="font-size: 12px;">made by <a href="https://mrsherobrine.xyz" style="color:white">mrsherobrine</a></p>
+        <p class="font textcenter" style="font-size: 12px;"><a href="https://github.com/mrsherobrine/shoginoter" style="color:white">source</a></p>
+    </footer>
 </body>
 </html>

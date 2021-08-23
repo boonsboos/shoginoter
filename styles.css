@@ -50,7 +50,6 @@ input {
 
 textarea {
     margin-top: 50px;
-    width: 278px;
     height:266px;
     border: var(--blue);
     border-radius: 10px;

@@ -1,5 +1,3 @@
-const FileSaver = require('file-saver');
-
 var player1;
 var player2;
 var epic;
@@ -52,7 +50,7 @@ function generateNotation() {
     var move;
     var pieces = document.getElementById("pieceselect");
     var actions = document.getElementById("actionselect");
-
+1
     if (document.getElementById("posprom").checked == true && document.getElementById("doneprom").checked == true) {
         move = pieces.options[pieces.selectedIndex].value + actions.options[actions.selectedIndex].value + document.getElementById("coords").value + "+";
     } else if (document.getElementById("posprom").checked == true && document.getElementById("doneprom").checked == false) {
@@ -63,9 +61,11 @@ function generateNotation() {
     epic = epic + "\n" + move;
 }
 
-function download() {
-    var date = Date();
-    player1 = player1.replace(/(Go|Sen)te\b/, "");
-    player2 = player2.replace(/(Go|Sen)te\b/, "");
-    FileSaver.saveAs(epic, player1+"_"+player2+"-"+date+".txt");
+function downloading() {
+    var out = document.getElementById("output");
+    out.select();
+    out.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(out.value);
+    out.innerHTML = "";
+
 }
